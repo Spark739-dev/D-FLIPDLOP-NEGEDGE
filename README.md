@@ -28,17 +28,42 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 **Procedure**
 
-/* write all the steps invloved */
+1. Create a new folder for D FlipFlop.
+2. Open the Quartus Prime.
+3. Create the new project.
+4. Configure the settings for the project to run the code.
+5. Choose Verilog HDL environment and write the code for D Flip Flop.
+6. Give input d and clk.
+7. Give output reg q and qbar.
+8. Set always positive egde for clk means 1.
+9. Begin write the q assign as d for the circuit logic.
+10. Finally assign the qbar as ~q.
+11. End the module andd click the compilation to compile the program.
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+    /* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+    */
+        module dflipflop(d, clk, q, qbar);
+        input d, clk;
+        output reg q;
+        output qbar;
+
+        always @(posedge clk)
+        begin
+        q = d;       
+        end
+
+        assign qbar = ~q;
+        endmodule
 
 **RTL LOGIC FOR FLIPFLOPS**
-
+![output](../RTL.png)
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-
+![output](<../TIMING DIAGRAM.png>)
 
 **RESULTS**
+
+The given D Flip Flop is implemented and run successfully in Verilog HDL in Quartus Prime Environment.
+
