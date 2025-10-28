@@ -52,7 +52,7 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
         output reg q;
         output qbar;
 
-        always @(posedge clk)
+        always @(negedge clk)
         begin
         q = d;       
         end
