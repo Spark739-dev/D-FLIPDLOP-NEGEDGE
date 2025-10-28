@@ -58,9 +58,11 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
         endmodule
 
 **RTL LOGIC FOR FLIPFLOPS**
+
 ![output](../RTL.png)
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+n
 ![output](<../TIMING DIAGRAM.png>)
 
 **RESULTS**
